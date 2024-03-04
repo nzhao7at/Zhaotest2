@@ -1,0 +1,372 @@
+<html>
+    <head>
+        <script src="https://aframe.io/releases/0.6.0/aframe.min.js"></script>
+
+        <!-- include ar.js for A-Frame -->
+        <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+
+
+    </head>
+    <body>
+        <a-scene embedded arjs>
+
+            // Load assets
+            // To understand all methods to load assets, visit this site: https://aframe.io/docs/1.5.0/core/asset-management-system.html
+            // Additionally, check out that you can load in audio, images, and video - play around with these
+            <a-assets>
+                //exterior images
+                <img id="exterior1" src="/assets/images_siteVisits/exterior1.jpg">
+                <img id="exterior2" src="/assets/images_siteVisits/exterior2.jpg">
+                <img id="exterior3" src="/assets/images_siteVisits/exterior3.jpg">
+                <img id="exterior4" src="/assets/images_siteVisits/exterior4.jpg">
+                <img id="exterior5" src="/assets/images_siteVisits/exterior5.jpg">
+                <img id="exterior6" src="/assets/images_siteVisits/exterior6.jpg">
+                <img id="exterior7" src="/assets/images_siteVisits/exterior7.jpg">
+                <img id="exterior8" src="/assets/images_siteVisits/exterior8.jpg">
+                <img id="exterior9" src="/assets/images_siteVisits/exterior9.jpg">
+                <img id="exterior10" src="/assets/images_siteVisits/exterior10.jpg">
+                <img id="exterior11" src="/assets/images_siteVisits/exterior11.jpg">
+                <img id="exterior12" src="/assets/images_siteVisits/exterior12.jpg">
+                <img id="exterior13" src="/assets/images_siteVisits/exterior13.jpg">
+                <img id="exterior14" src="/assets/images_siteVisits/exterior14.jpg">
+                <img id="exterior15" src="/assets/images_siteVisits/exterior15.jpg">
+                <img id="exterior16" src="/assets/images_siteVisits/exterior16.jpg">
+                <img id="exterior17" src="/assets/images_siteVisits/exterior17.jpg">
+                <img id="exterior18" src="/assets/images_siteVisits/exterior18.jpg">
+                <img id="exterior19" src="/assets/images_siteVisits/exterior19.jpg">
+                //interior images
+                <img id="interior1" src="/assets/images_siteVisits/interior1.jpg">
+                <img id="interior2" src="/assets/images_siteVisits/interior2.jpg">
+                <img id="interior3" src="/assets/images_siteVisits/interior3.jpg">
+                <img id="interior4" src="/assets/images_siteVisits/interior4.jpg">
+                <img id="interior5" src="/assets/images_siteVisits/interior5.jpg">
+                <img id="interior6" src="/assets/images_siteVisits/interior6.jpg">
+                <img id="interior7" src="/assets/images_siteVisits/interior7.jpg">
+                <img id="interior8" src="/assets/images_siteVisits/interior8.jpg">
+                <img id="interior9" src="/assets/images_siteVisits/interior9.jpg">
+                <img id="interior10" src="/assets/images_siteVisits/interior10.jpg">
+                <img id="interior11" src="/assets/images_siteVisits/interior11.jpg">
+                <img id="interior12" src="/assets/images_siteVisits/interior12.jpg">
+                <img id="interior13" src="/assets/images_siteVisits/interior13.jpg">
+                <img id="interior14" src="/assets/images_siteVisits/interior14.jpg">
+                <img id="interior15" src="/assets/images_siteVisits/interior15.jpg">
+                <img id="interior16" src="/assets/images_siteVisits/interior16.jpg">
+                <img id="interior17" src="/assets/images_siteVisits/interior17.jpg">
+                <img id="interior18" src="/assets/images_siteVisits/interior18.jpg">
+                <img id="interior19" src="/assets/images_siteVisits/interior19.jpg">
+                <img id="interior20" src="/assets/images_siteVisits/interior20.jpg">
+                <img id="interior21" src="/assets/images_siteVisits/interior21.jpg">
+                <img id="interior22" src="/assets/images_siteVisits/interior22.jpg">
+                <img id="interior23" src="/assets/images_siteVisits/interior23.jpg">
+                <img id="interior24" src="/assets/images_siteVisits/interior24.jpg">
+                <img id="interior25" src="/assets/images_siteVisits/interior25.jpg">
+                <img id="interior26" src="/assets/images_siteVisits/interior26.jpg">
+                <img id="interior27" src="/assets/images_siteVisits/interior27.jpg">
+                <img id="interior28" src="/assets/images_siteVisits/interior28.jpg">
+                <img id="interior29" src="/assets/images_siteVisits/interior29.jpg">
+                <img id="interior30" src="/assets/images_siteVisits/interior30.jpg">
+                <img id="interior31" src="/assets/images_siteVisits/interior31.jpg">
+                <img id="interior32" src="/assets/images_siteVisits/interior32.jpg">
+                <img id="interior33" src="/assets/images_siteVisits/interior33.jpg">
+                <img id="interior34" src="/assets/images_siteVisits/interior34.jpg">
+                <img id="interior35" src="/assets/images_siteVisits/interior35.jpg">
+                <img id="interior36" src="/assets/images_siteVisits/interior36.jpg">
+                <img id="interior37" src="/assets/images_siteVisits/interior37.jpg">
+                <img id="interior38" src="/assets/images_siteVisits/interior38.jpg">
+                <img id="interior39" src="/assets/images_siteVisits/interior39.jpg">
+                <img id="interior40" src="/assets/images_siteVisits/interior40.jpg">
+                <img id="interior41" src="/assets/images_siteVisits/interior41.jpg">
+                <img id="interior42" src="/assets/images_siteVisits/interior42.jpg">
+                <img id="interior43" src="/assets/images_siteVisits/interior43.jpg">
+                <img id="interior44" src="/assets/images_siteVisits/interior44.jpg">
+                <img id="interior45" src="/assets/images_siteVisits/interior45.jpg">
+                //msc
+                <img id="M1" src="/assets/images_Misc/M1.png">
+                <img id="M2" src="/assets/images_Misc/M2.png">
+                <img id="M3" src="/assets/images_Misc/M3.png">
+                <img id="M4" src="/assets/images_Misc/M4.png">
+                <img id="M5" src="/assets/images_Misc/M5.png">
+                //Historical
+                <img id="H1" src="/assets/images_historical/H1.png">
+                <img id="H2" src="/assets/images_historical/H2.png">
+                <img id="H3" src="/assets/images_historical/H3.png">
+                <img id="H4" src="/assets/images_historical/H4.png">
+                <img id="H5" src="/assets/images_historical/H5.png">
+                <img id="H6" src="/assets/images_historical/H6.png">
+                <img id="H7" src="/assets/images_historical/H7.png">
+                <img id="H8" src="/assets/images_historical/H8.png">
+                <img id="H9" src="/assets/images_historical/H9.png">
+                <img id="H10" src="/assets/images_historical/H10.png">
+                <img id="H11" src="/assets/images_historical/H11.png">
+                <img id="H12" src="/assets/images_historical/H12.png">
+            </a-assets>
+
+            // Construct entity
+            // To load image: https://aframe.io/docs/1.5.0/primitives/a-image.html
+            // To load video: https://aframe.io/docs/1.5.0/primitives/a-video.html
+            // To load sound: https://aframe.io/docs/1.5.0/components/sound.html
+            // To load obj-models: https://aframe.io/docs/1.5.0/components/obj-model.html
+            // To load gltf or glb models: 
+            https://aframe.io/docs/1.5.0/components/gltf-model.html
+            //exterior
+           <a-image scale=".25 .25 .25"
+                    position=".5 .5 .5"
+                    src="#exterior1"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 .5 0"
+                    src="#exterior2"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position=".5 0 0"
+                    src="#exterior3"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 0 .5"
+                    src="#exterior4"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position=".5 .5 0"
+                    src="#exterior5"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 .5 .5"
+                    src="#exterior6"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position=".5 0 .5"
+                    src="#exterior7"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="1 0 0"
+                    src="#exterior8"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 1 0"
+                    src="#exterior9"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 0 1"
+                    src="#exterior10"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="1 1 0"
+                    src="#exterior11"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="1 1 1"
+                    src="#exterior12"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="1 1 .5"
+                    src="#exterior13"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position=".5 1 0"
+                    src="#exterior14"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="1 .5 0"
+                    src="#exterior15"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="1 .5 .5"
+                    src="#exterior16"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position= "0 .5 1"
+                    src="#exterior17"></a-image>
+            <a-image scale="1 1 1"
+                    position="0 0 0"
+                    src="#exterior18"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="1 0 .5"
+                    src="#exterior19"></a-image>
+            //interior
+            <a-image scale=".25 .25 .25"
+                    position="-2 0 0"
+                    src="#interior1"></a-image>
+            <a-image scale="1 1 1"
+                    position="-2 -.5 0"
+                    src="#interior2"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2 -1 0"
+                    src="#interior3"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2 -.5 1"
+                    src="#interior4"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2 -1 -.5"
+                    src="#interior5"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -1 0"
+                    src="#interior6"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 0 0"
+                    src="#interior7"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -.5 0"
+                    src="#interior8"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -1 -.5"
+                    src="#interior9"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -.5 -1"
+                    src="#interior10"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -1 -1"
+                    src="#interior11"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -.5 -.5"
+                    src="#interior12"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -1.5 0"
+                    src="#interior13"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -1.5 -1"
+                    src="#interior14"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 -1.5 -.5"
+                    src="#interior15"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2 0 -1.5"
+                    src="#interior16"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 0 -.5"
+                    src="#interior17"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 0 -1"
+                    src="#interior18"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 -2 0"
+                    src="#interior19"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-.5 -2 0"
+                    src="#interior20"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1 -2 0"
+                    src="#interior21"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -2 0"
+                    src="#interior22"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 -2 -1.5"
+                    src="#interior23"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 -2 -.5"
+                    src="#interior24"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 -2 -1"
+                    src="#interior25"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-.5 -2 0"
+                    src="#interior26"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -2 0"
+                    src="#interior27"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1 -2 0"
+                    src="#interior28"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -2 -1.5"
+                    src="#interior29"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1 -2 -1"
+                    src="#interior30"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-.5 -2 -.5"
+                    src="#interior31"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-.5 -2 -1.5"
+                    src="#interior32"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-.5 -2 -1"
+                    src="#interior33"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1 -2 -.5"
+                    src="#interior34"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1 -2 -1.5"
+                    src="#interior35"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -2 -.5"
+                    src="#interior36"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -2 -1"
+                    src="#interior37"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 0 -2"
+                    src="#interior38"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1 -1 -2"
+                    src="#interior39"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-.5 -.5 -2"
+                    src="#interior40"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -1.5 -2"
+                    src="#interior41"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -1 -2"
+                    src="#interior42"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1.5 -.5 -2"
+                    src="#interior43"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-.5 -1.5 -2"
+                    src="#interior44"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-1 -1.5 -2"
+                    src="#interior45"></a-image>
+            //misc
+             <a-image scale="1 1 1"
+                    position="0 0 -2.5"
+                    src="#M1"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 .5 -2.5"
+                    src="#M2"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 1 -2.5"
+                    src="#M3"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 1.5 -2.5"
+                    src="#M4"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="0 2 -2.5"
+                    src="#M5"></a-image>
+            //Historical
+            <a-image scale="1 1 1"
+                    position="-2.5 0 0"
+                    src="#H1"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 0 .5"
+                    src="#H2"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 .5 0"
+                    src="#H3"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 0 1"
+                    src="#H4"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 1 0"
+                    src="#H5"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 0 1.5"
+                    src="#H6"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 1.5 0"
+                    src="#H7"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 1 .5"
+                    src="#H8"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 1 1.5"
+                    src="#H9"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 .5 1"
+                    src="#H10"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 .5 .5"
+                    src="#H11"></a-image>
+            <a-image scale=".25 .25 .25"
+                    position="-2.5 .5 1.5"
+                    src="#H12"></a-image>
+            
+            // Animate and rotate element
+            <a-animation attribute="rotation" to="90 360 0" dur="9000" repeat="indefinite" easing="linear"></a-animation>
+
+
+            <!-- define a camera which will move according to the marker position -->
+            <a-marker-camera preset='hiro'>
+            
+            <script>console.log("hello")</script>
+                
+            </a-marker-camera>
+
+        </a-scene>
+    </body>
+</html>
